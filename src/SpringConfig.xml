@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<bean id="employee" class="com.kanhaiya.bean.Employee">
+		<property name="id" value="102"></property>
+		<property name="name" value="ABC"></property>
+		<property name="address" value="Delhi"></property>
+	</bean>
+	<bean id="orgInfo" class="com.kanhaiya.bean.OrgInfo">
+		<property name="nameArr">
+			<array>
+				<value>google</value>
+				<value>Msn</value>
+				<value>Yahoo</value>
+				<value>Yahoo</value>
+			</array>
+		</property>
+		<property name="employeeNamelist">
+			<list>
+				<value>google</value>
+				<value>Msn</value>
+				<value>Yahoo</value>
+				<value>Yahoo</value>
+			</list>
+		</property>
+		<property name="empIdsSet">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				
+			</set>
+		</property>
+	</bean>
+</beans>
